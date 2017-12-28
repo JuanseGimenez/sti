@@ -13,4 +13,8 @@ class Animal < ApplicationRecord
   def self.races
   	%w(Lion WildBoar Meerkat)
   end
+
+  def talk
+    raise 'Abstract Method'
+  end
 end
